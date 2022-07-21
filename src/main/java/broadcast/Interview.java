@@ -33,10 +33,6 @@ public class Interview implements BroadcastPart, Serializable {
         return length * profitPerSecond;
     }
 
-    public String getPersonName() {
-        return personName;
-    }
-
     @Override
     public String toString() {
         return "Interview{" +

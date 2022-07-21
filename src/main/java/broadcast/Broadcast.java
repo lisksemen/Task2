@@ -19,7 +19,7 @@ public class Broadcast implements Serializable {
         return new Broadcast(length);
     }
 
-    public void addPart(BroadCastPartType type, int length, String... params) {
+    public void addPart(BroadcastPartType type, int length, String... params) {
         if (length <= 0)
             throw new IllegalArgumentException("Length can not be " + length);
         list.add(type.create(this, length, params));
@@ -38,10 +38,6 @@ public class Broadcast implements Serializable {
         this.length = length;
         this.paidContentLengthLimit = length / 2;
         this.limit = length;
-    }
-
-    public int getLength() {
-        return length;
     }
 
     public int getLimit() {

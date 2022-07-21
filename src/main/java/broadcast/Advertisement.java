@@ -22,10 +22,6 @@ public class Advertisement implements BroadcastPart, Serializable {
         this.productName = productName;
     }
 
-    public String getProductName() {
-        return productName;
-    }
-
     @Override
     public int getLength() {
         return length;

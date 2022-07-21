@@ -1,7 +1,7 @@
 package main;
 
 
-import broadcast.BroadCastPartType;
+import broadcast.BroadcastPartType;
 import broadcast.Broadcast;
 import host.Host;
 import host.InvitedHost;
@@ -25,14 +25,14 @@ public class Main {
         var broadcasts = new Broadcasts();
 
         var broadcast1 = Broadcast.createBroadcast(1000);
-        broadcast1.addPart(BroadCastPartType.SONG, 600, "singer name", "song name");
-        broadcast1.addPart(BroadCastPartType.ADVERTISEMENT, 100, "product name");
-        broadcast1.addPart(BroadCastPartType.INTERVIEW, 200, "person name");
+        broadcast1.addPart(BroadcastPartType.SONG, 600, "singer name", "song name");
+        broadcast1.addPart(BroadcastPartType.ADVERTISEMENT, 100, "product name");
+        broadcast1.addPart(BroadcastPartType.INTERVIEW, 200, "person name");
         broadcasts.add(broadcast1);
 
         var broadcast2 = Broadcast.createBroadcast(500);
-        broadcast2.addPart(BroadCastPartType.SONG, 250, "singer name 2", "song name 2");
-        broadcast2.addPart(BroadCastPartType.ADVERTISEMENT, 250, "product name 2");
+        broadcast2.addPart(BroadcastPartType.SONG, 250, "singer name 2", "song name 2");
+        broadcast2.addPart(BroadcastPartType.ADVERTISEMENT, 250, "product name 2");
         broadcasts.add(broadcast2);
 
         System.out.println("Listing:");

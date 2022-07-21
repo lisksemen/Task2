@@ -27,14 +27,6 @@ public class Song implements BroadcastPart, Serializable {
         return 0;
     }
 
-    public String getSingerName() {
-        return singerName;
-    }
-
-    public String getSongName() {
-        return songName;
-    }
-
     @Override
     public int getLength() {
         return length;

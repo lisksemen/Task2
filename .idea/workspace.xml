@@ -4,27 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d0699fdc-d49a-486b-acc3-135e4393a738" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="d0699fdc-d49a-486b-acc3-135e4393a738" name="Changes" comment="Initial commit">
       <change afterPath="$PROJECT_DIR$/broadcasts.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/broadcast/Advertisement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/broadcast/BroadCastPartType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/broadcast/Broadcast.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/broadcast/BroadcastPart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/broadcast/Interview.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/broadcast/Song.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/host/Host.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/host/InvitedHost.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/host/RegularHost.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repository/Broadcasts.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repository/Hosts.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repository/Repository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/broadcast/Advertisement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/broadcast/Advertisement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/broadcast/BroadCastPartType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/broadcast/BroadcastPartType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/broadcast/Broadcast.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/broadcast/Broadcast.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/broadcast/Interview.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/broadcast/Interview.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/broadcast/Song.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/broadcast/Song.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/host/Host.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/host/Host.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/Broadcasts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/Broadcasts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/Hosts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/Hosts.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,8 +86,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1658258563869</updated>
-      <workItem from="1658258565598" duration="17986000" />
+      <workItem from="1658258565598" duration="18623000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <created>1658421896411</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1658421896411</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,5 +114,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
   </component>
 </project>
