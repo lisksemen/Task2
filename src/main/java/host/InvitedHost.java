@@ -3,20 +3,22 @@ package host;
 import repository.Broadcasts;
 
 import java.io.Serializable;
+import java.util.List;
 
 public class InvitedHost extends Host implements Serializable {
     static final long serialVersionUID = 17643643434348L;
     private final String resume;
 
-    public static InvitedHost createHost(String name, Broadcasts broadcasts, String resume) {
-        if (broadcasts == null || name == null || resume == null)
+
+    public static InvitedHost createHost(String name, String resume) {
+        if (name == null || resume == null)
             throw new IllegalArgumentException("No null parameters allowed");
 
-        return new InvitedHost(name, broadcasts, resume);
+        return new InvitedHost(name, resume);
     }
 
-    private InvitedHost(String name, Broadcasts broadcasts, String resume) {
-        super(name, broadcasts);
+    private InvitedHost(String name, String resume) {
+        super(name);
         this.resume = resume;
     }
 

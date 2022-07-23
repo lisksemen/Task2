@@ -1,23 +1,22 @@
 package host;
 
-import repository.Broadcasts;
 import java.io.Serializable;
 
 public class RegularHost extends Host implements Serializable {
     static final long serialVersionUID = 34094093409L;
     private int experience;
     
-    public static RegularHost createHost(String name, Broadcasts broadcasts, int experience) {
+    public static RegularHost createHost(String name, int experience) {
         if (experience < 0)
             throw new IllegalArgumentException("experience can not be " + experience);
-        if (broadcasts == null || name == null)
+        if (name == null)
             throw new IllegalArgumentException("No null parameters allowed");
         
-        return new RegularHost(name, broadcasts, experience);
+        return new RegularHost(name, experience);
     }
 
-    private RegularHost(String name, Broadcasts broadcasts, int experience) {
-        super(name, broadcasts);
+    private RegularHost(String name, int experience) {
+        super(name);
         this.experience = experience;
     }
 

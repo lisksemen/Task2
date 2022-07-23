@@ -1,5 +1,7 @@
 package broadcast;
 
+import host.Host;
+
 import java.io.Serializable;
 import java.util.*;
 
@@ -7,16 +9,18 @@ public class Broadcast implements Serializable {
     static final long serialVersionUID = 112233445566L;
     private final int length;
 
+    private final Host host;
+
     private int limit;
 
     private int paidContentLengthLimit;
 
     private final List<BroadcastPart> list = new ArrayList<>();
 
-    public static Broadcast createBroadcast(int length) {
+    public static Broadcast createBroadcast(int length, Host host) {
         if (length <= 0)
             throw new IllegalArgumentException("Length can not be " + length);
-        return new Broadcast(length);
+        return new Broadcast(length, host);
     }
 
     public void addPart(BroadcastPartType type, int length, String... params) {
@@ -24,6 +28,10 @@ public class Broadcast implements Serializable {
             throw new IllegalArgumentException("Length can not be " + length);
         list.add(type.create(this, length, params));
 
+    }
+
+    public Host getHost() {
+        return host;
     }
 
     public double getProfit() {
@@ -34,10 +42,11 @@ public class Broadcast implements Serializable {
         return result;
     }
 
-    private Broadcast(int length) {
+    private Broadcast(int length, Host host) {
         this.length = length;
         this.paidContentLengthLimit = length / 2;
         this.limit = length;
+        this.host = host;
     }
 
     public int getLimit() {
